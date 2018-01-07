@@ -9,8 +9,7 @@ $(document).ready(function(){
   /******************************/
   
   $(window).on("load", function () {
-      $('.ps_spinner').fadeOut();
-      $('.ps_preloader').delay(450).fadeOut('slow');
+      $('.ab-overlay').delay(250).fadeOut('slow');
   });
 
   /******************************/

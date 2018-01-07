@@ -891,6 +891,23 @@ h2 {
         font-size: 16px;
         color: #aaaaaa; }
 
+.ab-single--wrapper .ab-page--header {
+  padding-bottom: 20px; }
+
+.ab-single--wrapper .ab-page--header p {
+  display: none; }
+
+.ab-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background: #eeeeee;
+  z-index: 9999; }
+
 @-webkit-keyframes logoAnima {
   0% {
     width: 10px;
