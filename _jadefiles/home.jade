@@ -1,0 +1,16 @@
+section.ab-home--blog
+	.ab-container
+		.ab-home--articles
+
+			{% for post in site.posts limit: 8 %}
+			article.ab-home--article
+				.ab-home--article__thumb(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
+				.ab-home--article__content
+					h3.ab-home--article__title: a(href="{{post.url}}") {{post.title}}
+					.ab-home--article__meta
+						span.ab-article--date {{post.date | date: "%b %d %Y"}}
+						span.ab-article--author {{post.author}}
+					.ab-home--article__text {{post.excerpt}}
+			{% endfor %}
+			
+

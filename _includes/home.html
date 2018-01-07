@@ -1,0 +1,15 @@
+
+<section class="ab-home--blog">
+  <div class="ab-container">
+    <div class="ab-home--articles">{% for post in site.posts limit: 8 %}
+      <article class="ab-home--article">
+        <div style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})" class="ab-home--article__thumb"></div>
+        <div class="ab-home--article__content">
+          <h3 class="ab-home--article__title"><a href="{{post.url}}">{{post.title}}</a></h3>
+          <div class="ab-home--article__meta"><span class="ab-article--date">{{post.date | date: "%b %d %Y"}}</span><span class="ab-article--author">{{post.author}}</span></div>
+          <div class="ab-home--article__text">{{post.excerpt}}</div>
+        </div>
+      </article>{% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,109 @@
+// importing styles
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Poppins:700|Open+Sans:400,600,700&subset=cyrillic')
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+body
+	font:
+		size: 14px
+		family: 'Merriweather', 'Open Sans', 'Poppins', sans-serif
+	color: rgba(0,0,0,0.7)
+	background-color: #eeeeee
+	line-height: 1.6
+
+/* SCROLL BAR STYLES */
+
+body::-webkit-scrollbar
+	width: 9px
+body::-webkit-scrollbar-thumb
+	background-color: $scrollbar
+body::-webkit-scrollbar-track
+	background-color: lighten($black, 4%)
+
+a 
+	text-decoration: none
+	color: $olive
+	display: inline-block
+	outline: none
+	transition: color 200ms ease-in-out
+	&:hover
+		color: $link_accent
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: middle
+
+.space
+	height: 500px
+
+.box_shadow
+	box-shadow: 1px 0 5px 1px rgba(0, 0, 0, 0.15), 0 0 3px 1px rgba(0, 0, 0, 0.15)
+
+// general styles
+
+.ab-container
+	max-width: 900px
+	padding: 0 15px
+	margin: 0 auto
+
+h1, h2, h3, h4, h5
+	font:
+		weight: 600
+		family: 'Poppins', 'Merriweather', 'Open Sans', sans-serif
+	color: $black
+
+
+// headings
+h2
+	font:
+		size: 40px
+		weight: 700
+	line-height: 1.4
+	margin: 0 0 35px
+	text-transform: capitalize
+
+
+
+
+// components
+
+.cta-btn
+	border: none
+	display: inline-block
+	background-color: $blue
+	padding: 0.6em 2.3em
+	border-radius: 2px
+	color: $white
+	font-weight: 600
+	+transition
+	text-align: center
+	text-transform: capitalize
+	&:hover
+		background-color: lighten($blue, 5%)
+		color: $white
+
+
+.ab-social--list
+	list-style-type: none
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-bottom: 15px
+	li 
+		margin-right: 25px
+		&:last-child
+			margin-right: 0
+		a
+			color: $muted
+			font-size: 16px
+			text-align: center
+			+transition(300ms)
+			&:hover
+				color: $accent

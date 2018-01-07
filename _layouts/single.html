@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/0-tools/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+{% include header.html %}
+
+<article class="ab-single">
+  <div class="ab-container">
+    <div style="background-image: url(/assets/img/gallery_images/{{page.thumbnail}})" class="ab-single--thumbnail"></div>
+    <h2 class="ab-single--title">{{page.title}}</h2>
+    <div class="ab-single--meta"><span class="ab-article--date">{{page.date | date: "%b %d %Y"}}</span><span class="ab-article--author">{{page.author}}</span></div>
+    <div class="ab-single--text">
+      {{ content }}
+    </div>
+  </div>
+</article>
+
+{% include footer.html %}
+
+
+<script src="/assets/js/jquery-1.12.0.min.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

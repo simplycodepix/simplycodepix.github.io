@@ -1,0 +1,65 @@
+.ab-single--wrapper
+
+.ab-single
+	margin-top: 30px
+	padding-bottom: 80px
+	&--thumbnail
+		height: 200px
+		margin-top: 15px
+		margin: 15px 0 0
+		background:
+			size: cover
+			position: center center
+			repeat: no-repeat
+		animation: thumbHeight 1s
+		animation-fill-mode: forwards
+		+transition
+	&--title
+		text-align: center
+		margin: 25px 0 15px
+	&--meta
+		margin-bottom: 25px
+		text-align: center
+		span.ab-article--date
+			margin-right: 10px
+	&--text
+		padding: 0 25px
+		font:
+			size: 19px
+		line-height: 1.8
+		p
+			margin-bottom: 25px
+			&:last-child
+				margin-bottom: 0
+		a
+			position: relative
+			&:hover:after,
+			&:hover:before
+				width: 0
+				background: $accent
+			&:after
+				+transition
+				content: ''
+				display: block
+				position: absolute
+				bottom: 3px
+				left: 0
+				width: 50%
+				border-top: 1px solid $olive
+			&:before
+				+transition
+				content: ''
+				display: block
+				position: absolute
+				bottom: 3px
+				right: 0
+				width: 50%
+				border-top: 1px solid $olive
+
+
+@keyframes thumbHeight
+	0%
+		height: 200px
+	100%
+		height: 300px
+
