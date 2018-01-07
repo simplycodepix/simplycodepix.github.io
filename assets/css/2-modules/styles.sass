@@ -148,3 +148,48 @@
 		white-space: nowrap
 	100%
 		width: 100%
+
+
+
+@media all and (max-width: 720px)
+	.ab-page--header
+		padding: 15px 0 25px
+		p
+			font-size: 14px
+	.ab-home--article
+		display: block
+		width: 100%
+		text-align: center
+		margin: 0 auto 25px
+		padding: 0 20%
+		&__content
+			width: 100%
+			padding: 0 15px
+		&__thumb
+			width: 100%
+		&__meta
+			justify-content: center
+			span.ab-article--date
+				margin-right: 15px
+		&:first-child
+			width: 100%
+
+@media all and (max-width: 420px)
+	.ab-home--article
+		display: block
+		width: 100%
+		text-align: center
+		margin: 0 auto 25px
+		padding: 0 5%
+		&__content
+			width: 100%
+			margin: 0
+			padding: 0 5px
+		&__thumb
+			width: 100%
+		&__meta
+			justify-content: center
+			span.ab-article--date
+				margin-right: 15px
+		&:first-child
+			width: 100%

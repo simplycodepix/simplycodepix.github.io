@@ -907,6 +907,53 @@ h2 {
   100% {
     width: 100%; } }
 
+@media all and (max-width: 720px) {
+  .ab-page--header {
+    padding: 15px 0 25px; }
+    .ab-page--header p {
+      font-size: 14px; }
+  .ab-home--article {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 25px;
+    padding: 0 20%; }
+    .ab-home--article__content {
+      width: 100%;
+      padding: 0 15px; }
+    .ab-home--article__thumb {
+      width: 100%; }
+    .ab-home--article__meta {
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .ab-home--article__meta span.ab-article--date {
+        margin-right: 15px; }
+    .ab-home--article:first-child {
+      width: 100%; } }
+
+@media all and (max-width: 420px) {
+  .ab-home--article {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 25px;
+    padding: 0 5%; }
+    .ab-home--article__content {
+      width: 100%;
+      margin: 0;
+      padding: 0 5px; }
+    .ab-home--article__thumb {
+      width: 100%; }
+    .ab-home--article__meta {
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .ab-home--article__meta span.ab-article--date {
+        margin-right: 15px; }
+    .ab-home--article:first-child {
+      width: 100%; } }
+
 .ab-single {
   margin-top: 30px;
   padding-bottom: 80px; }
