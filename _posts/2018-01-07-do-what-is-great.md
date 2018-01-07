@@ -2,7 +2,7 @@
 layout: single
 title: Do What is Great
 author: admin
-excerpt: Neque repudiandae corporis reprehenderit sapiente numquam, doloremque similique, id aliquid repellendus error excepturi quas.
+excerpt: Just testing some interesting lorem dum so perfect i
 thumbnail: image_1.jpg
 permalink: do-what-is-great.html
 ---
