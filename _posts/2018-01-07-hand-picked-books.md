@@ -6,6 +6,7 @@ excerpt: Neque repudiandae corporis reprehenderit sapiente numquam, doloremque s
 thumbnail: image_4.jpg
 permalink: hand-picked-books.html
 category: template
+previewlink: "http://simplycodepix.dx.am/one-page"
 downloadlink: works
 buttontext: Buy Template
 ---

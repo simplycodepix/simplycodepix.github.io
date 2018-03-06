@@ -58,7 +58,7 @@ img
 // general styles
 
 .page-holder
-	margin-top: 70px
+	margin-top: 60px
 
 .page-container
 	max-width: 1170px
@@ -118,6 +118,9 @@ h2
 	&-center
 		justify-content: center
 		align-items: center
+
+	&-wrap
+		flex-flow: wrap
 	
 	&-space
 		&--between
@@ -130,3 +133,15 @@ h2
 	
 	&-direction--column
 		flex-direction: column
+
+	&-row
+		display: flex
+		margin: 0 -10px
+
+	&-col
+		&--50
+			width: calc(50% - 20px)
+			margin: 0 10px
+		&--33
+			width: calc(33.333% - 20px)
+			margin: 0 10px

@@ -6,6 +6,7 @@ excerpt: Just testing some interesting lorem dum so perfect i
 thumbnail: image_1.jpg
 permalink: do-what-is-great.html
 category: template
+previewlink: "http://simplycodepix.dx.am/one-page"
 downloadlink: works
 buttontext: Buy Template
 ---

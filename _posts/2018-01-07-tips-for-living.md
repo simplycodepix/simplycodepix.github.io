@@ -6,7 +6,8 @@ excerpt: On the day Nora discovered that her husband, Hugh, had gotten another w
 thumbnail: image_1.jpg
 permalink: simplycodepix.dx.am/business
 category: template
-downloadlink: themeforest.net/item/codepix-creation-personal-html-template/19627435
+previewlink: "http://simplycodepix.dx.am/one-page"
+downloadlink: "https://themeforest.net/item/codepix-creation-personal-html-template/19627435"
 buttontext: Buy Template
 ---
 

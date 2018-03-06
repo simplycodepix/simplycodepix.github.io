@@ -3,9 +3,35 @@
   <section style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})" class="home-featured">
     <div class="page-container">
       <h2 class="home-featured--title"><a href="{{post.url}}">{{post.title}}</a></h2>
-      <p class="home-featured--excerpt">{{post.excerpt}}</p><a href="http://{{post.url}}" target="_blank" class="home-featured--cta page-cta">Preview</a><a href="http://{{post.downloadlink}}" class="templates-item--cta page-cta colored">{{post.buttontext}}</a>
+      <p class="home-featured--excerpt">{{post.excerpt}}</p><a href="{{post.previewlink}}" target="_blank" class="home-featured--cta page-cta">Preview</a><a href="{{post.downloadlink}}" class="templates-item--cta page-cta colored">{{post.buttontext}}</a>
     </div>
   </section>{%  endfor  %}
+  <section id="scroll-to--about" class="home-about">
+    <div class="page-container">
+      <div class="home-about--welcome">
+        <h2 class="section-title home-about--title">We are welcoming you, stranger</h2>
+        <p class="home-about--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam sit hic possimus animi, facilis unde reprehenderit. Maiores ad eius accusantium! Eaque dolores necessitatibus doloribus, officia culpa aliquam inventore eius!</p>
+      </div>
+      <div class="home-about--services flex-row flex-space--between flex-wrap">
+        <div class="home-about--service flex-col--50">
+          <h3 class="home-about--service__title">Web Development</h3>
+          <p class="home-about--service__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!</p>
+        </div>
+        <div class="home-about--service flex-col--50">
+          <h3 class="home-about--service__title">Web Design</h3>
+          <p class="home-about--service__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!</p>
+        </div>
+        <div class="home-about--service flex-col--50">
+          <h3 class="home-about--service__title">Photography</h3>
+          <p class="home-about--service__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!</p>
+        </div>
+        <div class="home-about--service flex-col--50">
+          <h3 class="home-about--service__title">HTML Templates</h3>
+          <p class="home-about--service__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
 <!--
 {% for post in site.posts limit: 8 %}

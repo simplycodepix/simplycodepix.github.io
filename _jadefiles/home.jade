@@ -4,11 +4,28 @@
 		.page-container
 			h2.home-featured--title: a(href="{{post.url}}") {{post.title}}
 			p.home-featured--excerpt {{post.excerpt}}
-			a(href="http://{{post.url}}" target="_blank").home-featured--cta.page-cta Preview
-			a(href="http://{{post.downloadlink}}").templates-item--cta.page-cta.colored {{post.buttontext}}
+			a(href="{{post.previewlink}}" target="_blank").home-featured--cta.page-cta Preview
+			a(href="{{post.downloadlink}}").templates-item--cta.page-cta.colored {{post.buttontext}}
 	{%  endfor  %}
 
-	
+	section#scroll-to--about.home-about
+		.page-container
+			.home-about--welcome
+				h2.section-title.home-about--title We are welcoming you, stranger
+				p.home-about--text Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quibusdam sit hic possimus animi, facilis unde reprehenderit. Maiores ad eius accusantium! Eaque dolores necessitatibus doloribus, officia culpa aliquam inventore eius!
+			.home-about--services.flex-row.flex-space--between.flex-wrap
+				.home-about--service.flex-col--50
+					h3.home-about--service__title Web Development
+					p.home-about--service__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!
+				.home-about--service.flex-col--50
+					h3.home-about--service__title Web Design
+					p.home-about--service__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!
+				.home-about--service.flex-col--50
+					h3.home-about--service__title Photography
+					p.home-about--service__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!
+				.home-about--service.flex-col--50
+					h3.home-about--service__title HTML Templates
+					p.home-about--service__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!
 
 
 
