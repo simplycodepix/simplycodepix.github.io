@@ -1,0 +1,8 @@
+.page-holder.templates
+	{% for post in site.posts limit: 8 %}
+	section.templates-item(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
+		.page-container
+			h2.templates-item--title: a(href="{{post.url}}") {{post.title}}
+			p.templates-item--excerpt {{post.excerpt}}
+			a(href="{{post.url}}").templates-item--cta.page-cta Learn More
+	{%  endfor  %}

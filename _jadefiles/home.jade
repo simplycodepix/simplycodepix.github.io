@@ -1,7 +1,32 @@
-section.ab-home--blog
-	.ab-container
-		.ab-home--articles
+.page-holder.home
+	{% for post in site.posts limit: 1 %}
+	section.home-featured(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
+		.page-container
+			h2.home-featured--title: a(href="{{post.url}}") {{post.title}}
+			p.home-featured--excerpt {{post.excerpt}}
+			a(href="{{post.url}}").home-featured--cta.page-cta Learn More
+	{%  endfor  %}
 
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
 			{% for post in site.posts limit: 8 %}
 			article.ab-home--article
 				.ab-home--article__thumb(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")

@@ -1,5 +1,14 @@
 // importing styles
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Poppins:700|Open+Sans:400,600,700&subset=cyrillic')
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Poppins:700,400,600|Open+Sans:400,600,700&subset=cyrillic')
+
+=poppins
+	font-family: 'Poppins', sans-serif
+
+=bgcover
+	background: 
+		size: cover
+		position: center center
+		repeat: no-repeat
 
 *
 	margin: 0
@@ -9,7 +18,7 @@
 body
 	font:
 		size: 14px
-		family: 'Merriweather', 'Open Sans', 'Poppins', sans-serif
+		family: 'Open Sans', 'Poppins', sans-serif
 	color: rgba(0,0,0,0.7)
 	background-color: #eeeeee
 	line-height: 1.6
@@ -48,8 +57,11 @@ img
 
 // general styles
 
-.ab-container
-	max-width: 900px
+.page-holder
+	margin-top: 70px
+
+.page-container
+	max-width: 1170px
 	padding: 0 15px
 	margin: 0 auto
 
@@ -74,10 +86,10 @@ h2
 
 // components
 
-.cta-btn
+.page-cta
 	border: none
 	display: inline-block
-	background-color: $blue
+	background-color: $accent
 	padding: 0.6em 2.3em
 	border-radius: 2px
 	color: $white
@@ -86,24 +98,24 @@ h2
 	text-align: center
 	text-transform: capitalize
 	&:hover
-		background-color: lighten($blue, 5%)
+		background-color: lighten($accent, 5%)
 		color: $white
 
-
-.ab-social--list
-	list-style-type: none
+.flex
 	display: flex
-	align-items: center
-	justify-content: center
-	margin-bottom: 15px
-	li 
-		margin-right: 25px
-		&:last-child
-			margin-right: 0
-		a
-			color: $muted
-			font-size: 16px
-			text-align: center
-			+transition(300ms)
-			&:hover
-				color: $accent
+	
+	&-center
+		justify-content: center
+		align-items: center
+	
+	&-space
+		&--between
+			justify-content: space-between
+		&--around
+			justify-content: space-around
+	
+	&-align--center
+		align-items: center
+	
+	&-direction--column
+		flex-direction: column

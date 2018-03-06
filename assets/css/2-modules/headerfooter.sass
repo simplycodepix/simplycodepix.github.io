@@ -1,0 +1,27 @@
+.page-header
+    background: $white
+    box-shadow: 0 0 5px rgba(0,0,0,0.3)
+    position: fixed
+    top: 0
+    height: 70px
+    left: 0
+    width: 100%
+    z-index: 999
+    .page-container
+        flex: 1
+    &--logo
+        +poppins
+        font-weight: 700
+        font-size: 18px
+    &--nav
+        &__list
+            list-style-type: none
+            li
+                margin-left: 25px
+                &:first-child
+                    margin-left: 0
+            a
+                font-weight: 600
+                color: lighten($black, 50%)
+                &:hover, &.active
+                    color: $black
