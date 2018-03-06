@@ -1,7 +1,12 @@
 .templates
+    flex-flow: wrap
+    padding: 20px
     &-item
-        padding: 120px 0
+        padding: 50px 0
         position: relative
+        width: calc(50% - 10px)
+        text-align: center
+        margin-bottom: 20px
         +bgcover
         &:before
             content: ''
@@ -17,15 +22,14 @@
             position: relative
             z-index: 10
         &--title
-            font-size: 40px
-            max-width: 85%
-            margin-bottom: 25px
+            font-size: 30px
+            margin-bottom: 20px
             a
                 color: $white
         &--excerpt
             margin-bottom: 40px
-            font-weight: 600
-            color: rgba($white, 0.8)
-            font-size: 16px
-            max-width: 60%
+            color: rgba($white, 0.9)
+            padding: 0 50px
+            font-size: 15px
         &--cta
+            margin: 0 10px

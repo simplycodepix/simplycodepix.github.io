@@ -4,7 +4,8 @@
 		.page-container
 			h2.home-featured--title: a(href="{{post.url}}") {{post.title}}
 			p.home-featured--excerpt {{post.excerpt}}
-			a(href="{{post.url}}").home-featured--cta.page-cta Learn More
+			a(href="http://{{post.url}}" target="_blank").home-featured--cta.page-cta Preview
+			a(href="http://{{post.downloadlink}}").templates-item--cta.page-cta.colored {{post.buttontext}}
 	{%  endfor  %}
 
 	

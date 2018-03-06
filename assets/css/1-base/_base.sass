@@ -90,16 +90,27 @@ h2
 	border: none
 	display: inline-block
 	background-color: $accent
-	padding: 0.6em 2.3em
+	padding: 0.5em 2.3em
 	border-radius: 2px
 	color: $white
 	font-weight: 600
 	+transition
 	text-align: center
 	text-transform: capitalize
+	border: 2px solid transparent
 	&:hover
 		background-color: lighten($accent, 5%)
 		color: $white
+	&.colored
+		background-color: transparent
+		color: $white
+		border: 2px solid $white
+		&:hover
+			color: $secondary_accent
+			border: 2px solid $secondary_accent
+		&:focus
+			background: $secondary_accent
+			color: $white
 
 .flex
 	display: flex
