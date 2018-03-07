@@ -1,6 +1,6 @@
 .page-holder.templates.flex.flex-space--between
 	{% for post in site.categories[page.category] limit: 8 %}
-	article.templates-item.flex.flex-center(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
+	article.templates-item.flex.flex-center(style="background-image: url(assets/img/template_images/{{post.thumbnail}})")
 		.page-container
 			h2.templates-item--title: a(href="{{post.url}}") {{post.title}}
 			p.templates-item--excerpt {{post.excerpt}}

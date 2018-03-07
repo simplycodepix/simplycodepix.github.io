@@ -1,6 +1,6 @@
 
 <div class="page-holder templates flex flex-space--between">{% for post in site.categories[page.category] limit: 8 %}
-  <article style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})" class="templates-item flex flex-center">
+  <article style="background-image: url(assets/img/template_images/{{post.thumbnail}})" class="templates-item flex flex-center">
     <div class="page-container">
       <h2 class="templates-item--title"><a href="{{post.url}}">{{post.title}}</a></h2>
       <p class="templates-item--excerpt">{{post.excerpt}}</p><a href="{{post.previewlink}}" target="_blank" class="templates-item--cta page-cta">Preview</a><a href="{{post.downloadlink}}" class="templates-item--cta page-cta colored">{{post.buttontext}}</a>

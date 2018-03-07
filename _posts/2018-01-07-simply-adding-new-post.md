@@ -4,7 +4,7 @@ title: Simply Adding New Post
 author: admin
 excerpt: Neque repudiandae corporis reprehenderit sapiente numquam, doloremque similique, id aliquid repellendus error excepturi quas.
 thumbnail: image_7.jpg
-permalink: hand-picked-books.html
+permalink: simply-adding-new-post.html
 category: template
 previewlink: "http://simplycodepix.dx.am/one-page"
 downloadlink: works

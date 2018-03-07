@@ -4,12 +4,14 @@ title: Tips for Living - Very Adictive Book
 author: admin
 excerpt: On the day Nora discovered that her husband, Hugh, had gotten another woman pregnant
 thumbnail: image_1.jpg
-permalink: simplycodepix.dx.am/business
-category: template
+permalink: tips-for-living.html
+category: featured
 previewlink: "http://simplycodepix.dx.am/one-page"
 downloadlink: "https://themeforest.net/item/codepix-creation-personal-html-template/19627435"
 buttontext: Buy Template
 ---
+
+![My helpful screenshot]({{ "/assets/img/gallery_images/image_1.jpg" | absolute_url }})
 
 One of my favorite books. Just read this description!
 

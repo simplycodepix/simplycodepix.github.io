@@ -1,11 +1,11 @@
 
-<div class="page-holder home">{% for post in site.posts limit: 1 %}
-  <section style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})" class="home-featured">
+<div class="page-holder home">{% for post in site.categories[page.category] limit: 1 %}
+  <section style="background-image: url(assets/img/template_images/{{post.thumbnail}})" class="home-featured">
     <div class="page-container">
       <h2 class="home-featured--title"><a href="{{post.url}}">{{post.title}}</a></h2>
       <p class="home-featured--excerpt">{{post.excerpt}}</p><a href="{{post.previewlink}}" target="_blank" class="home-featured--cta page-cta">Preview</a><a href="{{post.downloadlink}}" class="templates-item--cta page-cta colored">{{post.buttontext}}</a>
     </div>
-  </section>{%  endfor  %}
+  </section>{% endfor %}
   <section id="scroll-to--about" class="home-about">
     <div class="page-container">
       <div class="home-about--welcome">
@@ -33,15 +33,3 @@
     </div>
   </section>
 </div>
-<!--
-{% for post in site.posts limit: 8 %}
-article.ab-home--article
-	.ab-home--article__thumb(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
-	.ab-home--article__content
-		h3.ab-home--article__title: a(href="{{post.url}}") {{post.title}}
-		.ab-home--article__meta
-			span.ab-article--date {{post.date | date: "%b %d %Y"}}
-			span.ab-article--author {{post.author}}
-		.ab-home--article__text {{post.excerpt}}
-{% endfor %}
--->

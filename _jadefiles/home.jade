@@ -1,12 +1,12 @@
 .page-holder.home
-	{% for post in site.posts limit: 1 %}
-	section.home-featured(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
+	{% for post in site.categories[page.category] limit: 1 %}
+	section.home-featured(style="background-image: url(assets/img/template_images/{{post.thumbnail}})")
 		.page-container
 			h2.home-featured--title: a(href="{{post.url}}") {{post.title}}
 			p.home-featured--excerpt {{post.excerpt}}
 			a(href="{{post.previewlink}}" target="_blank").home-featured--cta.page-cta Preview
 			a(href="{{post.downloadlink}}").templates-item--cta.page-cta.colored {{post.buttontext}}
-	{%  endfor  %}
+	{% endfor %}
 
 	section#scroll-to--about.home-about
 		.page-container
@@ -26,34 +26,4 @@
 				.home-about--service.flex-col--50
 					h3.home-about--service__title HTML Templates
 					p.home-about--service__description Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo deleniti, cum impedit odit esse maiores!
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
-			{% for post in site.posts limit: 8 %}
-			article.ab-home--article
-				.ab-home--article__thumb(style="background-image: url(assets/img/gallery_images/{{post.thumbnail}})")
-				.ab-home--article__content
-					h3.ab-home--article__title: a(href="{{post.url}}") {{post.title}}
-					.ab-home--article__meta
-						span.ab-article--date {{post.date | date: "%b %d %Y"}}
-						span.ab-article--author {{post.author}}
-					.ab-home--article__text {{post.excerpt}}
-			{% endfor %}
-			
-
+	

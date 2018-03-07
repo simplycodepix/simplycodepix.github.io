@@ -14,20 +14,21 @@
 {% include loader.html %}
 
 {% include header.html %}
-
-<article class="ab-single">
-  <div class="ab-container">
-    <div style="background-image: url(/assets/img/gallery_images/{{page.thumbnail}})" class="ab-single--thumbnail"></div>
-    <h2 class="ab-single--title">{{page.title}}</h2>
-    <div class="ab-single--meta"><span class="ab-article--date">{{page.date | date: "%b %d %Y"}}</span><span class="ab-article--author">{{page.author}}</span></div>
-    <div class="ab-single--text">
-      {{ content }}
+<div class="page-holder">
+  <article class="templates-single">
+    <div class="page-container">
+      <div style="background-image: url(/assets/img/template_images/{{page.thumbnail}})" class="templates-single--thumbnail"></div>
+      <h2 class="templates-single--title">{{page.title}}</h2>
+      <div class="templates-single--meta">
+        <span class="templates-single--date">{{page.date | date: "%b %d %Y"}}</span>
+        <span class="templates-single--author">{{page.author}}</span>
+      </div>
+      <div class="templates-single--text">
+        {{ content }}
+      </div>
     </div>
-  </div>
-</article>
-
-{% include footer.html %}
-
+  </article>
+</div>
 
 <script src="/assets/js/jquery-1.12.0.min.js"></script>
 <script src="/assets/js/app.js"></script>
