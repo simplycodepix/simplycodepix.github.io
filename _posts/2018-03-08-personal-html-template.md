@@ -3,7 +3,7 @@ layout: single
 title: Codepix - Personal HTML Template
 author: admin
 excerpt: This template is written in valid and clean HTML & CSS3 code. Template has a fully responsive layout.
-thumbnail: screenshot-personal-template.png
+thumbnail: screenshot-personal-template.jpg
 permalink: personal-html-template.html
 category: template
 previewlink: "http://simplycodepix.dx.am/template_cpx/"
