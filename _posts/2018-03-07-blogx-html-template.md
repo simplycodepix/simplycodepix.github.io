@@ -11,4 +11,4 @@ downloadlink: "https://themeforest.net/item/blogx-minimal-creative-blog-template
 buttontext: Buy Template
 ---
 
-![My helpful screenshot]({{ "/assets/img/gallery_images/image_1.jpg" | absolute_url }})
+![My helpful screenshot]({{ "/assets/img/template_images/screenshot-blogx-template.png" | absolute_url }})
